@@ -7,9 +7,11 @@
 
 //definisco le variabili
 const grigliaWrapper = document.getElementById('griglia');
+const bottone = document.getElementById('play');
+const difficoltà = document.getElementById('difficoltà');
 
 
-//creo una griglia
+//creo una funzione griglia
 function griglia (numeroQuadrati , colonne) {
     
     for (let i = 1; i <= numeroQuadrati; i++) {
@@ -25,5 +27,18 @@ function griglia (numeroQuadrati , colonne) {
 
 }
 
-griglia(100, 10)
+//genero griglia in base a difficoltà
+bottone.addEventListener('click', function(){
 
+    if (difficoltà.value == 1) {
+        griglia (100,10);
+
+    } else if (difficoltà.value == 2) {
+        griglia (81,9);
+
+    } else if (difficoltà.value == 3) { 
+        griglia (49,7);
+        
+    }
+
+} )    
