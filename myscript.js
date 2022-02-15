@@ -5,3 +5,25 @@
 // con difficoltà 3 => tra 1 e 49
 // Bonus: Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro.
 
+//definisco le variabili
+const grigliaWrapper = document.getElementById('griglia');
+
+
+//creo una griglia
+function griglia (numeroQuadrati , colonne) {
+    
+    for (let i = 1; i <= numeroQuadrati; i++) {
+        const quadrato = document.createElement('div');
+        quadrato.classList.add('quadrato');
+        console.log(quadrato);
+        
+        quadrato.append(i);
+        quadrato.style.height = `calc(100% / ${colonne})`;
+        quadrato.style.width = `calc(100% / ${colonne})`;
+        grigliaWrapper.appendChild(quadrato); 
+    }
+
+}
+
+griglia(100, 10)
+

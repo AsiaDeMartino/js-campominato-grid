@@ -12,4 +12,19 @@
     height: calc(100vh - 110px);
     width: 100%;
     background-color: aquamarine;
+    padding: 100px 0;
+}
+
+#griglia{
+    height: 700px;
+    width: 700px;
+    margin: auto;
+}
+
+.quadrato{  
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
