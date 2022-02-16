@@ -22,7 +22,9 @@ function griglia (numeroQuadrati , colonne) {
         quadrato.append(i);
         quadrato.style.height = `calc(100% / ${colonne})`;
         quadrato.style.width = `calc(100% / ${colonne})`;
-        grigliaWrapper.appendChild(quadrato); 
+        grigliaWrapper.appendChild(quadrato);
+        
+        quadrato.addEventListener("click" , casellaSelezionata);
     }
 
 }
@@ -49,3 +51,8 @@ bottone.addEventListener('click', function(){
 function reset() { 
     grigliaWrapper.innerHTML = "";
 }
+
+function casellaSelezionata () {
+    this.classList.add("blue");
+}
+

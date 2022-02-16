@@ -23,8 +23,19 @@
 
 .quadrato{  
     background-color: white;
-    border: 1px solid black;
+    border-top: 10px solid lightgray;
+    border-left: 10px solid lightgray;
+    border-bottom: 10px solid gray;
+    border-right: 10px solid gray;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.blue{
+    background-color: rgb(82,127,233);
+    border-top: 10px solid rgb(138,166,230);
+    border-left: 10px solid rgb(138,160,230);
+    border-bottom: 10px solid rgb(45,101,232);
+    border-right: 10px solid rgb(45,101,232);
 }
