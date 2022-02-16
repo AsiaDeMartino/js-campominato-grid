@@ -31,14 +31,21 @@ function griglia (numeroQuadrati , colonne) {
 bottone.addEventListener('click', function(){
 
     if (difficoltà.value == 1) {
+        reset();
         griglia (100,10);
 
     } else if (difficoltà.value == 2) {
+        reset();
         griglia (81,9);
 
     } else if (difficoltà.value == 3) { 
+        reset();
         griglia (49,7);
-        
+
     }
 
 } )    
+
+function reset() { 
+    grigliaWrapper.innerHTML = "";
+}
